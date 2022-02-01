@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 5px rgb(238, 238, 238);
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.transactionList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    border-radius: 0.3vh;
+}
+
+.tEntry {
+    background-color: whitesmoke;
+    border-radius: 0.3vh;
+    margin: 1vh;
+    width: 32vh;
+    height: 48vh;
+    border-bottom: 0.1vh solid rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.tImage {
+    align-self: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 28vh;
+    height: 38vh;
+}
+
+.tEntryTitle {
+    margin-left: 1vh;
+    font-size: 3vh;
+}
+
+.tEntryAuthor {
+    margin-left: 1vh;
+    font-size: 2.5vh;
+    padding-right: 2vh;
+    color: rgb(17, 17, 17);
+}
