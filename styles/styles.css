@@ -11284,6 +11284,7 @@ textarea.form-control-lg {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
 }
 
 header {
@@ -11293,6 +11294,7 @@ header {
   height: 10vh;
   background-color: #eeeeee;
   box-shadow: 0 0 5px #eeeeee;
+  margin-bottom: 2vh;
 }
 
 h1, .h1 {
@@ -11307,6 +11309,8 @@ h1, .h1 {
 }
 
 .searchBox {
+  margin-left: 0;
+  margin-right: auto;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
@@ -11330,18 +11334,16 @@ h1, .h1 {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 0.3vh;
 }
 
 .tEntry {
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 0.3vh;
   margin: 1vh;
   width: 32vh;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: auto;
   border-bottom: 0.1vh solid #ebebeb;
   display: flex;
   flex-direction: column;
@@ -11351,6 +11353,8 @@ h1, .h1 {
 
 .tImage {
   align-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-top: 2vh;
   margin-bottom: 2vh;
   width: 28vh;
