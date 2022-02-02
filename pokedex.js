@@ -1,5 +1,8 @@
 window.onload = async () => {
     const pokedexList = document.getElementById('pokedexList');
+    const searchBar = document.getElementById('searchBar');
+    const searchBtn = document.getElementById('searchBtn');
+    searchBtn.addEventListener(); //! setup event listener
     const b = await fetch('https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/pokedex.json').then((response) => response.json());
 
     class Pokemon {
