@@ -1,6 +1,7 @@
 window.onload = async () => {
     const theMiddle = document.getElementById('middle');
     const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('keypress', function(e) {if(e.key === 'Enter') doPokestuff();});
     document.getElementById('searchBtn').addEventListener('click', doPokestuff);
     const b = await fetch('https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/pokedex.json').then((response) => response.json());
 
@@ -13,7 +14,7 @@ window.onload = async () => {
         }
     }
     
-    doPokestuff();
+    doPokestuff(); // Pulls up the pokemons on page load (Shows from 001 to 008)
 
     function doPokestuff() {
         pokedexList.remove();
@@ -33,7 +34,6 @@ window.onload = async () => {
             }
         }
 
-        // console.log(pokemons);
         for (let i = 0; i < 8; i++) {
             const e = pokemons[i];
             console.log(e);
