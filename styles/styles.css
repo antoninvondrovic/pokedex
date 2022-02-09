@@ -11300,6 +11300,7 @@ header {
 h1, .h1 {
   margin-left: 3vh;
   font-size: 5vh;
+  position: absolute;
 }
 
 .middle {
@@ -11309,13 +11310,14 @@ h1, .h1 {
 }
 
 .searchBox {
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
 
 .searchBar {
+  padding-left: 1vh;
   width: 50vh;
   height: 5vh;
 }
@@ -11323,6 +11325,11 @@ h1, .h1 {
 .searchBtn {
   height: 5vh;
   width: 5vh;
+}
+
+.fa-search {
+  width: 1.8vh;
+  height: 1.8vh;
 }
 
 .pokedexList {
