@@ -24,17 +24,18 @@ window.onload = async () => {
         theMiddle.appendChild(poke);
         
         const pokemons = [];
+        const pokeAmount = 8;
 
         let howmany = 0;
         for (let i = 0; i < b.length; i++) {
             const e = b[i];
-            if (e.name.english.toLowerCase().includes(searchBar.value.toLowerCase()) && howmany < 8) {
+            if (e.name.english.toLowerCase().includes(searchBar.value.toLowerCase()) && howmany < pokeAmount) {
                 pokemons[howmany] = new Pokemon(b[i].name.english, b[i].description, b[i].hires);
                 howmany++;
             }
         }
 
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < pokeAmount; i++) {
             const e = pokemons[i];
             console.log(e);
             
