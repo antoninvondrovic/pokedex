@@ -24,7 +24,7 @@ window.onload = async () => {
         theMiddle.appendChild(poke);
         
         const pokemons = [];
-        const pokeAmount = 8;
+        const pokeAmount = 16;
 
         let howmany = 0;
         for (let i = 0; i < b.length; i++) {
